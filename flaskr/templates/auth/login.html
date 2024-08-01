@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="box">
+  <form action="/auth/login" method="post" id="form">
+    <div class="img">
+      <img src="../static/Image/logo technofoster.png" alt="logo" id="logoImage">
+    </div>
+    {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+    {% endfor %} 
+    <input type="text" name="username" id="name" placeholder="Full Name">
+    <input type="submit" value="submit" id="submit">
+  </form>
+</div>
+{% endblock %}

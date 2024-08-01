@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS user;
+
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT UNIQUE NOT NULL,
+  take_his_deploma INTEGER Not Null
+);

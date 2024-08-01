@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="box">
+    <div class="img">
+        <img src="../static/Image/logo technofoster.png" alt="logo" id="logoImage">
+    </div>
+    <ul>
+        {% if g.user %}
+        <li><span>{{ g.user['username'] }}</span>
+            {%for s in g.user['username'] | search_filename%}
+        <li><a href="{{ url_for('auth.downloadFiles', name= g.user['username'], section=s) }}"
+                id="downloadBtn">Download Certificat of {{s}}</a>
+            {%endfor%}
+        <li><a href="{{ url_for('auth.logout') }}" id="logoutBtn">Log Out</a>
+            {% else %}
+        <li><a href="{{ url_for('auth.login') }}" id="login">Log In</a>
+            {% endif %}
+    </ul>
+</div>
+{% endblock %}
