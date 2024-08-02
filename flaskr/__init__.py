@@ -33,7 +33,7 @@ def create_app(test_config=None):
     return app
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=False, host='0.0.0.0')
 
 app = create_app()
 from flaskr import routes
