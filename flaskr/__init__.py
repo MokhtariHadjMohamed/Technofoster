@@ -5,7 +5,6 @@ from flask import Flask
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
-    app.run(debug=False,host='0.0.0.0')
     
     app.config.from_mapping(
         SECRET_KEY='dev',
@@ -32,6 +31,9 @@ def create_app(test_config=None):
     app.register_blueprint(auth.bp)
 
     return app
+
+if __name__ == '__main__':
+    app.run()
 
 app = create_app()
 from flaskr import routes
