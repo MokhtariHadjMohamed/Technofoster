@@ -301,6 +301,17 @@ main .ourTeam .container .group .card li {
 /* End Our Team */
 /* Start Our Partners */
 main .ourPartners .container{
-    
+
+}
+
+main .ourPartners .container .list-partners{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .ourPartners .container .list-partners img{
+    width: 200px;
+    height: 200px;
 }
 /* End Our Partners */
