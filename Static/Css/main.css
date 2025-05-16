@@ -339,15 +339,39 @@ main .ourSeccues .container .seccues-list {
 }
 
 main .ourSeccues .container .seccues-list .card {
+    display: flex;
+    align-items: center;
     text-align: center;
     color: var(--sec-color);
-    height: 100%;
+    border-right: var(--sec-color) solid 2px;
+}
+
+main .ourSeccues .container .seccues-list .card .icon i {
+    width: 120px;
+    height: 120px;
+    background: var(--white-color);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+main .ourSeccues .container .seccues-list .card .description {
+    width: 50%;
+    margin-left: 25px;
+}
+
+main .ourSeccues .container .seccues-list .card h1 {
+    color: var(--sec-color);
+    font-size: 64px;
 }
 
 main .ourSeccues .container .seccues-list .card h3 {
     color: var(--balck-color);
-    margin: 50px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 /* End Our Seccues */
@@ -393,3 +417,97 @@ main .trainers .container .people .card:hover .card_input {
 }
 
 /* End Trainers */
+/* Start Contact Us */
+main .contactUs {
+    background-color: #000d1d;
+    padding: 30px;
+}
+
+main .contactUs .container .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+main .contactUs .container .contact h1 {
+    font-size: 64px;
+    color: var(--main-color);
+}
+
+main .contactUs .container .title h1 {
+    color: var(--main-color);
+}
+
+main .contactUs .container .title p {
+    color: var(--white-color);
+}
+
+main .contactUs .container .contact .card .logo img {
+    width: 150px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+main .contactUs .container .contact .card {
+    width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #041b36af;
+    color: var(--white-color);
+}
+
+main .contactUs .container .contact .card input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+main .contactUs .container .contact .card textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+main .contactUs .container .contact .card .sendBtn {
+    width: 100%;
+    padding: 20px 50px;
+    display: block;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--sec-color);
+    margin: auto;
+}
+/* End Contact Us */
+/* Start Footer */
+footer{
+    background-color: var(--sec-color);
+    color: var(--main-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+footer strong{
+    font-weight: bold;
+}
+/* End Footer */
