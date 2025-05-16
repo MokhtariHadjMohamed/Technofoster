@@ -1,0 +1,159 @@
+/* Start var */
+:root {
+    --balck-color: #191919;
+    --white-color: #eeeeee;
+    --main-color: #7014f2;
+    --sec-color: #00f59b;
+}
+
+/* End var */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Menu */
+.nav .container .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .container li {
+    display: inline;
+}
+
+.nav .container .socialMedia li {
+    margin: 0 5px;
+}
+
+.nav .container .menu_item li {
+    margin: 0 10px;
+}
+
+.nav .container a {
+    text-decoration: none;
+    color: var(--balck-color);
+    font-size: 20px;
+}
+
+.nav .container a:hover {
+    color: var(--main-color);
+}
+
+.nav .container .hamburger {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav .container .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--balck-color);
+}
+
+@media (max-width: 720px) {
+    .nav .container .menu {
+        display: none;
+        text-align: center;
+    }
+
+    .nav .container .socialMedia,
+    .nav .container .menu_item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav .container .menu_item li {
+        display: block;
+    }
+
+    .nav .container .hamburger {
+        display: flex;
+        margin-top: 4%;
+    }
+}
+
+/* End Menu */
+/* Start projects */
+.projects {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.projects .project img {
+    width: 100%;
+}
+
+/* End projects */
+/* Start Footer */
+.footer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer .container ul {
+    padding: 0;
+}
+
+.footer .container ul li {
+    display: inline;
+    margin: 5px;
+}
+
+.footer .container ul li a {
+    text-decoration: none;
+    color: var(--balck-color);
+    font-size: 20px;
+}
+
+.footer .container a:hover {
+    color: var(--main-color);
+}
+
+/* End Footer */
