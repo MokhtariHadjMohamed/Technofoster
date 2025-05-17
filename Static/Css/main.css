@@ -324,13 +324,19 @@ main .ourTeam .container .group .card li {
 
 @media (max-width: 720px) {
     main .ourTeam .container .group {
-        display: inline;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    main .ourTeam .container .group .card{
+    main .ourTeam .container .group .card {
+        width: 200px;
+        height: 200px;
         margin: 10px;
     }
 }
+
 /* End Our Team */
 /* Start Our Partners */
 main .ourPartners {
@@ -348,7 +354,7 @@ main .ourPartners .container .list-partners {
         display: inline;
     }
 
-    main .ourPartners .container .list-partners a{
+    main .ourPartners .container .list-partners a {
         display: block;
         text-align: center;
     }
@@ -487,12 +493,6 @@ main .contactUs .container .contact {
     gap: 20px;
 }
 
-@media (max-width: 720px) {
-    main .contactUs .container .contact {
-        display: inline;
-    }
-}
-
 main .contactUs .container .contact h1 {
     font-size: 64px;
     color: var(--main-color);
@@ -551,6 +551,17 @@ main .contactUs .container .contact .card .sendBtn {
     color: var(--sec-color);
     margin: auto;
 }
+
+@media (max-width: 720px) {
+    main .contactUs .container .contact {
+        display: inline;
+    }
+
+    main .contactUs .container .contact h1 {
+        font-size: 32px;
+    }
+}
+
 
 /* End Contact Us */
 /* Start Footer */
