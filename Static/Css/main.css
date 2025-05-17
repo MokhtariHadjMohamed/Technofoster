@@ -84,7 +84,7 @@ nav .container a:hover {
     color: var(--main-color);
 }
 
-/* 
+
 nav .container .hamburger {
     cursor: pointer;
     display: none;
@@ -100,24 +100,32 @@ nav .container .hamburger div {
 
 @media (max-width: 720px) {
     nav .container {
-        display: none;
-        text-align: center;
+        display: block;
     }
 
-    nav .container .menu_item {
+    nav .container .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav .container .nav_item {
+        display: none;
+        text-align: center;
         margin: 0;
         padding: 0;
     }
 
-    .nav .container .menu_item li {
+    nav .container .nav_item li {
         display: block;
     }
 
-    .nav .container .hamburger {
+    nav .container .hamburger {
         display: flex;
         margin-top: 4%;
     }
-} */
+}
 
 /* End nav */
 /* Start Header */
@@ -165,6 +173,13 @@ header .container .btn {
     color: var(--sec-color);
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    header .container .btn {
+        width: 100%;
+    }
+}
+
 
 /* End Header */
 /* Start Title */
@@ -232,6 +247,16 @@ main .ourHead .container .head .img::before {
     z-index: -1;
 }
 
+@media (max-width: 720px) {
+    main .ourHead .container .head {
+        display: inline;
+    }
+
+    main .ourHead .container .head .img img {
+        width: 100%;
+    }
+}
+
 /* End OurHead */
 /* End OurTeam */
 main .ourTeam {
@@ -297,6 +322,15 @@ main .ourTeam .container .group .card li {
     font-size: 24px;
 }
 
+@media (max-width: 720px) {
+    main .ourTeam .container .group {
+        display: inline;
+    }
+
+    main .ourTeam .container .group .card{
+        margin: 10px;
+    }
+}
 /* End Our Team */
 /* Start Our Partners */
 main .ourPartners {
@@ -307,6 +341,17 @@ main .ourPartners .container .list-partners {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 720px) {
+    main .ourPartners .container .list-partners {
+        display: inline;
+    }
+
+    main .ourPartners .container .list-partners a{
+        display: block;
+        text-align: center;
+    }
 }
 
 main .ourPartners .container .list-partners img {
@@ -374,6 +419,17 @@ main .ourSeccues .container .seccues-list .card h3 {
     font-size: 18px;
 }
 
+
+@media (max-width: 720px) {
+    main .ourSeccues .container .seccues-list {
+        display: inline;
+    }
+
+    main .ourSeccues .container .seccues-list .card {
+        border-right: none;
+    }
+}
+
 /* End Our Seccues */
 /* Start Trainers*/
 main .trainers {
@@ -392,6 +448,7 @@ main .trainers .container .people .card {
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin: auto;
 }
 
 main .trainers .container .people .card img {
@@ -428,6 +485,12 @@ main .contactUs .container .contact {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+}
+
+@media (max-width: 720px) {
+    main .contactUs .container .contact {
+        display: inline;
+    }
 }
 
 main .contactUs .container .contact h1 {
@@ -467,7 +530,7 @@ main .contactUs .container .contact .card input {
     margin-bottom: 20px;
 }
 
-main .contactUs .container .contact .card textarea{
+main .contactUs .container .contact .card textarea {
     width: 100%;
     outline: none;
     border: none;
@@ -488,26 +551,28 @@ main .contactUs .container .contact .card .sendBtn {
     color: var(--sec-color);
     margin: auto;
 }
+
 /* End Contact Us */
 /* Start Footer */
-footer{
+footer {
     background-color: var(--sec-color);
     color: var(--main-color);
     text-align: center;
     padding: 20px;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: var(--white-color);
     font-weight: bold;
 }
 
-footer strong{
+footer strong {
     font-weight: bold;
 }
+
 /* End Footer */
