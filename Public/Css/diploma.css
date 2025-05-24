@@ -1,0 +1,83 @@
+/* Start Contact Us */
+main .getDiploma {
+    background-color: #000d1d;
+    padding: 6% 30px;
+}
+
+main .getDiploma .container .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+main .getDiploma .container .contact h1 {
+    font-size: 64px;
+    color: var(--main-color);
+}
+
+main .getDiploma .container .title h1 {
+    color: var(--main-color);
+}
+
+main .getDiploma .container .title p {
+    color: var(--white-color);
+}
+
+main .getDiploma .container .contact .card .logo img {
+    width: 150px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+main .getDiploma .container .contact .card {
+    width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #041b36af;
+    color: var(--white-color);
+}
+
+main .getDiploma .container .contact .card input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+main .getDiploma .container .contact .card .sendBtn {
+    width: 100%;
+    padding: 20px 50px;
+    display: block;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--sec-color);
+    margin: auto;
+}
+
+main .getDiploma .container .contact .card .error {
+    background-color: #ffdddd;
+    color: #a94442;
+    padding: 12px;
+    border: 1px solid #a94442;
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 4px;
+    max-width: 600px;
+}
+
+@media (max-width: 720px) {
+    main .getDiploma .container .contact {
+        display: inline;
+    }
+
+    main .getDiploma .container .contact h1 {
+        font-size: 32px;
+    }
+}
+/* End Contact Us */
